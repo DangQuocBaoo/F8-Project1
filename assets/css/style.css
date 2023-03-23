@@ -12,6 +12,10 @@ body {
     font-family: Poppins, sans-serif;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
 /* Common */
 a {
     text-decoration: none;
@@ -56,8 +60,9 @@ a {
     display: flex;
     flex-direction: column;
     background-color: #e6f0ff;
-    height: 100vh;
+    height: calc(100vh - 90px);
     position: relative;
+    justify-content: center;
 }
 
 .navbar {
@@ -95,13 +100,10 @@ a {
     border-radius: 8px;
 }
 
-.hero {
-    margin-top: 130px;
-}
-.hero .info {
+.hero-wrap .info {
     width: 51%;
 }
-.hero .sub-title {
+.hero-wrap .sub-title {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 1.5;
@@ -109,7 +111,7 @@ a {
     color: #687690;
 }
 
-.hero .title {
+.hero-wrap .title {
     font-weight: 700;
     font-size: 6.2rem;
     line-height: 1.19;
@@ -117,7 +119,7 @@ a {
     color: #000336;
 }
 
-.hero .descr {
+.hero-wrap .descr {
     margin-top: 30px;
     font-weight: 400;
     font-size: 1.8rem;
@@ -125,7 +127,7 @@ a {
     color: #5a6473;
 }
 
-.hero .btn-hero {
+.hero-wrap .btn-hero {
     margin-top: 40px;
     min-width: 170px;
     font-weight: 500;
