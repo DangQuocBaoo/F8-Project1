@@ -44,14 +44,24 @@ a {
 }
 
 /* ===== Header =====*/
-.header {
+
+.fixed-header {
+    position: sticky;
+    z-index: 1;
+    top: -26px;
+    background-color: #e6f0ff;
+    padding-top: 26px;
+}
+.hero-wrap {
+    display: flex;
+    flex-direction: column;
     background-color: #e6f0ff;
     height: 100vh;
     position: relative;
 }
 
 .navbar {
-    padding-top: 38px;
+    padding: 12px 0px;
     display: flex;
     align-items: center;
 }
@@ -103,7 +113,6 @@ a {
     font-weight: 700;
     font-size: 6.2rem;
     line-height: 1.19;
-    /* or 119% */
     margin-top: 8px;
     color: #000336;
 }
